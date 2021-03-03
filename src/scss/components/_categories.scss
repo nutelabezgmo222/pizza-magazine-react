@@ -1,0 +1,31 @@
+@import 'variables';
+
+.categories {
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    li {
+      background-color: $main;
+      padding: 10px 15px;
+      border-radius: 30px;
+      margin-right: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.1s ease-in-out;
+      @include noselect();
+      border: 2px solid $main;
+      &:hover {
+        background-color: $sub;
+      }
+
+      &:active {
+        background-color: $sub;
+      }
+
+      &.active {
+        background-color: $sub;
+      }
+    }
+  }
+}
