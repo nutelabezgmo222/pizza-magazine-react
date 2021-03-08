@@ -1,4 +1,4 @@
-{
+const data = {
   "pizzas": [
     {
       "id": 0,
@@ -102,3 +102,5 @@
     }
   ]
 }
+
+export default data

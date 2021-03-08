@@ -7,6 +7,7 @@ import { setCategory, setSortBy } from '../redux/actions/filtersAction'
 import { fetchPizzas } from '../redux/actions/pizzasAction'
 import { addPizzaToCart } from '../redux/actions/cartAction'
 
+
 const categoryNames = ["Мясные", "Вегетерианские", "Гриль", "Острые", "Закрытые"]
 const sortNames = [{name: "популярности", type: "popular"}, 
                    {name: "цене", type: "price"},  
@@ -31,7 +32,7 @@ function Home() {
   }
   React.useEffect(() => {
     dispatch(fetchPizzas(category, sortBy))
-  }, [category, sortBy])
+  }, [category, sortBy, dispatch])
 
   return (
     <div className="container">

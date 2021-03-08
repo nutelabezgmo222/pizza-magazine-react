@@ -6,7 +6,6 @@ import { Home, Cart } from "./pages"
 import { setCart } from './redux/actions/cartAction'
 
 
-
 function App() { 
   const dispatch = useDispatch()
   if(localStorage.getItem('cart')) {
